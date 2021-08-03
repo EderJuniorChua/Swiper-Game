@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    //comment
     // this is to make player move
     private float dir = 1;
     public float speed;
