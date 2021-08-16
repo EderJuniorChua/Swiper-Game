@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActionButtons : MonoBehaviour
 {
@@ -28,6 +29,12 @@ public class ActionButtons : MonoBehaviour
     {
         currentAction = Action.CHARACTERANDBULLET;
         Debug.Log("A: " + getCurrentAction());
+    }
+
+    public void Restart()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
 }

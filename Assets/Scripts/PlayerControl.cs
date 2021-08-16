@@ -70,7 +70,7 @@ public class PlayerControl : MonoBehaviour
                     {
                         case ActionButtons.Action.BULLET:
                             //Debug.Log(ActionButtons.Action.BULLET.ToString());
-                            //playerRB.hide
+                           
                             Projectile.spawn(swipeDirection, worldSwipeStartPos); //bullet spawn
                             break;
                         case ActionButtons.Action.CHARACTER:
@@ -79,12 +79,12 @@ public class PlayerControl : MonoBehaviour
                             break;
                         case ActionButtons.Action.CHARACTERANDBULLET:
                             //Debug.Log(ActionButtons.Action.CHARACTERANDBULLET.ToString());
-                            if (touch.position.x < Screen.width / 2)
+                            if (swipeStartPos.x < Screen.width / 2)
                             {
                                 Debug.Log("Left click");
                                 playerRB.AddForce(-swipeDirection * (5f));
                             }
-                            else if (touch.position.x > Screen.width / 2)
+                            else if (swipeStartPos.x > Screen.width / 2)
                             {
                                 Debug.Log("Right click");
                                 Projectile.spawn(swipeDirection, playerRB.position); //bullet spawn on player's position
