@@ -534,4 +534,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/ederc/Desktop/Demo level/demo.apk
+  playerPath: C:/Users/ederc/Desktop/Demo level/0.0.1b.apk
